@@ -1,0 +1,6 @@
+C:\projetos\accenture\project\cryptocoin.contract\bin\Debug\cryptocoin.contract.dll
+C:\projetos\accenture\project\cryptocoin.contract\bin\Debug\cryptocoin.contract.pdb
+C:\projetos\accenture\project\cryptocoin.contract\obj\Debug\cryptocoin.contract.csprojAssemblyReference.cache
+C:\projetos\accenture\project\cryptocoin.contract\obj\Debug\cryptocoin.contract.csproj.CoreCompileInputs.cache
+C:\projetos\accenture\project\cryptocoin.contract\obj\Debug\cryptocoin.contract.dll
+C:\projetos\accenture\project\cryptocoin.contract\obj\Debug\cryptocoin.contract.pdb

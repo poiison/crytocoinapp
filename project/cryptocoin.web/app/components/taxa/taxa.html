@@ -1,0 +1,79 @@
+﻿<div class="top" style="min-height: 100%">
+    <div class="row text-center">
+
+        <div class="col-md-3 col-md-offset-2" style="text-align: left">
+            <div class="form-group">
+                <label>De</label><br />
+                <ui-select ng-model="selectedBase.value" on-select="obtertaxarecomendadabtc()">
+                    <ui-select-match>
+                        <span >{{$select.selected.Nome}} ( {{$select.selected.Simbolo}} )</span>
+                    </ui-select-match>
+                    <ui-select-choices repeat="item in (base | filter: $select.search) track by item.Simbolo">
+                        <span ng-bind="item.Nome"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="col-md-3" style="text-align: left">
+            <div class="form-group">
+                <label>Para</label><br />
+                <ui-select ng-model="selectedTarget.value" on-select="obtertaxarecomendadabtc()">
+                    <ui-select-match>
+                        <span>{{$select.selected.Nome}} ( {{$select.selected.Simbolo}} )</span>
+                    </ui-select-match>
+                    <ui-select-choices repeat="item in (target | filter: $select.search) track by item.Simbolo">
+                        <span ng-bind="item.Nome"></span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="col-md-1" style="min-height:55px; display: table; text-align: center;">
+            <div style="display: table-cell; vertical-align: bottom;">
+                <button type="submit" class="btn btn-success btn-outline" ng-click="obtertaxas()" ng-disabled="selectedBase.value == '' && selectedTarget.value == ''">Ok</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <div ng-hide="(recommendedfee == null || recommendedfee == undefined || recommendedfee == '')">
+                <small>
+                    <b>Taxa mais rápida:</b> {{recommendedfee.fastestFee}} | <b>Taxa mais rápida (dentro de meia hora):</b> {{recommendedfee.halfHourFee}} | <b>Taxa mais rápida (por hora):</b> {{recommendedfee.hourFee}}
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-2" style="margin-bottom: 50px">
+            <div class="text-right " style="padding-top: 50px">
+                <small ng-show="busca">{{time}}</small>
+            </div>
+            <table id="tbTaxas" class="table table-striped table-condensed small table-hover table-text-middle" ng-show="busca">
+                <thead>
+                    <tr>
+                        <th class="col-md-2 text-left">Mercado</th>
+                        <th class="col-md-2 text-center">Preço</th>
+                        <th class="col-md-2 text-center">Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-show="lsTaxas != undefined  && lsTaxas != null && lsTaxas.length >= 1" ng-repeat="itensTaxa in lsTaxas | orderBy: 'Price'">
+                        <td class="align-td text-left">{{ itensTaxa.Market }}</td>
+                        <td class="align-td text-center">{{ itensTaxa.Price | number: 10 }}</td>
+                        <td class="align-td text-center">{{ itensTaxa.Volume }}</td>
+                    </tr>
+                    <tr ng-show="lsTaxas == undefined  || lsTaxas == null || lsTaxas.length == 0">
+                        <td colspan="3">
+                            <center>Nenhum mercado encontrado.</center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script language="javascript"></script>

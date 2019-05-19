@@ -1,0 +1,92 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #3c3c3c;
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px Roboto,arial,sans-serif;
+
+}
+
+.container {
+    background-color: #fff;
+}
+
+.top {
+    padding-top: 100px;
+}
+
+h4 {
+    border: 0 solid #fff;
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.table-top {
+    padding-top: 50px;
+}
+
+/*OUTLINE BTN*/
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+    .btn-primary.btn-outline:hover,
+    .btn-success.btn-outline:hover,
+    .btn-info.btn-outline:hover,
+    .btn-warning.btn-outline:hover,
+    .btn-danger.btn-outline:hover {
+        color: #fff;
+    }
+
+/* TABLE DEFAULT*/
+
+.align-td {
+    vertical-align: middle !important;
+}
+
+
+ /*FONTS*/
+
+a.uppercase {
+    text-transform: uppercase;
+}
+
+a.lowercase {
+    text-transform: lowercase;
+}
+
+a.capitalize {
+    text-transform: capitalize;
+}

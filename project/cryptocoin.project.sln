@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.webapi", "..\cryptocoin.webapi\cryptocoin.webapi.csproj", "{52F6AA03-E98C-4134-BBDF-846B9A7F63E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.business", "..\cryptocoin.business\cryptocoin.business.csproj", "{5E8740EE-A49B-4E8D-90B4-4A106319DCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.integration", "cryptocoin.integration\cryptocoin.integration.csproj", "{ED7B53DF-A28F-449B-BAA0-1A342EC9121C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.contract", "cryptocoin.contract\cryptocoin.contract.csproj", "{299193FD-0F03-49C1-AE9F-6F9F12499EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.testintegration", "cryptocoin.testintegration\cryptocoin.testintegration.csproj", "{798DAD7F-F47D-453A-A974-056002539F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.unittest", "cryptocoin.unittest\cryptocoin.unittest.csproj", "{DB18CA69-32C9-4881-9CC5-5B0C8E670297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cryptocoin.web", "cryptocoin.web\cryptocoin.web.csproj", "{86B4023A-78F6-4A6F-A2CB-74CF61DAD0B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F6AA03-E98C-4134-BBDF-846B9A7F63E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F6AA03-E98C-4134-BBDF-846B9A7F63E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F6AA03-E98C-4134-BBDF-846B9A7F63E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F6AA03-E98C-4134-BBDF-846B9A7F63E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8740EE-A49B-4E8D-90B4-4A106319DCE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8740EE-A49B-4E8D-90B4-4A106319DCE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8740EE-A49B-4E8D-90B4-4A106319DCE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8740EE-A49B-4E8D-90B4-4A106319DCE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7B53DF-A28F-449B-BAA0-1A342EC9121C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7B53DF-A28F-449B-BAA0-1A342EC9121C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7B53DF-A28F-449B-BAA0-1A342EC9121C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7B53DF-A28F-449B-BAA0-1A342EC9121C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299193FD-0F03-49C1-AE9F-6F9F12499EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299193FD-0F03-49C1-AE9F-6F9F12499EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299193FD-0F03-49C1-AE9F-6F9F12499EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299193FD-0F03-49C1-AE9F-6F9F12499EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798DAD7F-F47D-453A-A974-056002539F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798DAD7F-F47D-453A-A974-056002539F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798DAD7F-F47D-453A-A974-056002539F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798DAD7F-F47D-453A-A974-056002539F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB18CA69-32C9-4881-9CC5-5B0C8E670297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB18CA69-32C9-4881-9CC5-5B0C8E670297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB18CA69-32C9-4881-9CC5-5B0C8E670297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB18CA69-32C9-4881-9CC5-5B0C8E670297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B4023A-78F6-4A6F-A2CB-74CF61DAD0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B4023A-78F6-4A6F-A2CB-74CF61DAD0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B4023A-78F6-4A6F-A2CB-74CF61DAD0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B4023A-78F6-4A6F-A2CB-74CF61DAD0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5C42E41-92DB-4EF6-BB46-56C98B039B5F}
+	EndGlobalSection
+EndGlobal
